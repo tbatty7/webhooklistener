@@ -13,6 +13,6 @@ public class Controller {
     @PostMapping("/webhooks")
     public ResponseEntity recieveWebhook(@RequestBody String body) {
         log.error("-------------> Webhook body:  " + body);
-        return ResponseEntity.ok("Lookin good!");
+        return ResponseEntity.ok("Lookin good!  Thanks for the webhook!");
     }
 }
